@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Susie Chac</title>
+  </head>
+
+  <body>
+    <div class = "header-title">
+      <center>
+        <h1>Susie Chac</h1>  
+      </center>
+      
+    </div>
+  	<div class="about-me">
+  		<h1>Susie Chac</h1>
+      <p>Hi, thanks for stumbling onto my page! My name is Susie Chac and I am a second year studying Plant Sciences and Computer Science.
+      I am currently enrolled at the University of California, Davis and so far I love it here!</p>
+      
+      <h1>Things I like</h1>
+      <li>
+        <ul>Crafts</ul>
+        <ul>Sewing</ul>
+        <ul>Coding</ul>
+        <ul>Learning</ul>
+        <ul>Anime</ul>
+      </li>
+  	</div>
+  	<div class = "Contact Me">
+  	  <p>You can contact me at suchac@ucdavis.edu and visit me on <a href = "http://www.github.com/susuchac">Github.</a> to see my projects.</p>
+  	</div>
+
+  </body>
+</html>
