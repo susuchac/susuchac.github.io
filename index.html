@@ -8,9 +8,17 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
-
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- <script type="text/javascript" src="js/scripts.js"></script> -->        
 
         <title>Susie Chac</title>
     </head>
@@ -41,14 +49,51 @@
         </div>
  -->
 
-        <nav class="navbar navbar-default navbar-fixed-top" style="background-color: lightpink">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-right navbar-light" style="background-color: lightpink">
             <a class="navbar-brand" href="#">Susie Chac</a>
-            <button type="button" class="btn btn-default btn-lg" style="background-color: lightpink">
-                <span class="glyphicon glyphicon-nav" aria-hidden="true"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+<!--                 <li class="nav-item active">
+                    <a class="nav-link float-right" href="#"><i class="fa fa-desktop" style="font-size: 1em;"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-mobile" style="font-size: 1.25em;"></i></a>
+                </li> -->
+              
+<!--                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown link
+                    </a> -->
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">About</a>
+                  <a class="dropdown-item" href="#">Skills</a>
+                  <a class="dropdown-item" href="#">Experience</a>
+                  <a class="dropdown-item" href="#">Projects</a>
+                  <a class="dropdown-item" href="#">Contact</a>
+                </div> -->
+              <!-- </li> -->
+            </ul>
+          </div>
         </nav>
 
-<!--         <div class = "header-title">
+        <div class = "header-title">
         <center>
         <h1>Susie Chac</h1>  
         </center>
@@ -72,16 +117,11 @@
             <li>Anime</li>
         </ul>
 
-        <h1>Skills</h1>
+        <h1>Languages</h1>
         <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Unity</li>
-            <li>Prolog</li>
-            <li>Lisp</li>
-            <li>R</li>
-            <li>UNIX/LINUX</li>
+        	<li>Fluent: Java, C, C++, C#, UNIX/LINUX</li>
+        	<li>Competent in: Unity, Prolog, Lisp, Logisim</li>
+        	<li>Some experience: R, HTML, JavaScript, CSS</li>
         </ul>
 
         <h1>Relevant Coursework</h1>
@@ -104,22 +144,59 @@
             <li>Programming Fundamentals (Java)</li>
             <li>AP Computer Science (Java)</li>
         </ul>
-
+<!-- 
         <h1>Experience</h1>
         <p>
             
+        </p> -->
+
+        <h1>Research</h1>
+        <p>
+
         </p>
 
-        <h1>Projects</h1>
+        <h1>Academic Projects</h1>
         <p>
-            
+            Facial Recognition (Java, 2017)
+            <ul>
+            	<li>Wrote a machine learning based image recognition program that learns to distinguish between male and female faces.</li>
+				<li>Input nodes (number of pixels in picture), two output nodes (male/female). Hidden nodes and layers to simplify the neural network and prevent overfitting. Used backpropagation to update the initially random weights in our neural network to minimize the error for each output neuron.</li>
+				<li>Calculated the error for each cycle of the neural network as the AI learned from training images. Used a confidence estimate to determine the accuracy of our AI's predictions.</li>
+            </ul>
+            Connect Four (Java, 2017)
+            <ul>
+            	<li>Wrote two programs (MiniMax and AlphaBeta algorithm) that compared the 69 winning configurations to the current game board to score player point (points are out of 4 to reflect how close a player is to winning). Created an evaluation function based on the number of player 1 and player 2's odd threats, even threats, and number of game pieces on the board.</li>
+            	<li>Tested against a stupid AI, a Monte Carlo AI, and against itself. Always wins against stupid AI and Monte Carlo AI, and only sometimes wins against itself.</li>
+            </ul>
+            Traversing Mount St. Helens (Java, 2017)
+            <ul>
+            	<li>Wrote an A* search program to find a path from a start point to an end point, while minimizing search space of a terrain of varying heights.</li> 
+            	<li>Created an admissible heuristic for an exponential cost function that chose a direction to move in depending on cost functions and the surrounding 8 neighbors. The heuristic was to move diagonally until the x- or y- coordinate was equal to that of the goal point, and then move in a straight line to the goal point. </li>
+            	<li>Created another admissible heuristic for the division cost function, that obeyed the Triangular Inequality and used the Euclidean distance from the start point to the end point as the shortest path.</li>
+            </ul>
+        </p>
+
+        <h1>Activities</h1>
+        <p>
+        	Davis Anime Club, at the University of California, Davis
+        	<ul>
+	        	<li>President: delegate jobs to officers and make sure all events and activities go smoothly. (2017-present)</li>
+	        	<li>Retention Manager: plan events and activities to help club members make friends. (2016-2017)</li>
+	        	<li>Designer: work with officers to design posters, club logos, and other sorts of advertising. (2016-present)</li>
+        	</ul>
         </p>
 
         <h1>Contact</h1>
-        <footer class="contact-icons">
-            <p>Contact me</p>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>
+        	sue.chac08@gmail.com
+        </p>
+        <!-- <p>Contact me</p> -->
 
-        </footer>> -->
-    </body>
+<!--         <div class="icons">
+            <a href="#"><i class="fa fa-angellist fa-2x"></i></a>
+            <a href="#"><i class="fa fa-flickr fa-2x"></i></a>
+            <a href="#"><i class="fa fa-github fa-2x"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a href="#"><i class="fa fa-envelope-o fa-2x"></i></a>
+        </div> -->
 </html>

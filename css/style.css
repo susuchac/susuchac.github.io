@@ -2,12 +2,30 @@ body {
 	background-color: lightblue;
 }
 
-.navbar-default .navbar-brand {
+.navbar-expand-lg .navbar-brand {
 	color: white;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 20px;
 }
 
+ul.navbar-nav li {
+	float: right;
+	/*color: white;*/
+	font-weight: bold;
+	font-size: 20px;
+}
+
+li a  {
+	color: white;
+}
+
+/*.nav-link {
+	.float-right {
+		float: right	
+	}
+}*/
+
+/*
 .glyphicon-nav {
   width: 18px;
   padding: 8px 0;
@@ -32,7 +50,7 @@ body {
   height: 4px;
   width: 100%;
   background: white;
-}
+}*/
 
 /*
 ul.navbar {
@@ -109,13 +127,13 @@ li.dropdown {
 	margin: 6px 0;
 	transition: 0.4s;
 }*/
-
+/*
 h1 {
 	color: white;
 	text-align: center;
 }
 
 p {
-	/*font-family: verdana;*/
+	/*font-family: verdana;
 	font-size: 20px;
-}
+}*/
